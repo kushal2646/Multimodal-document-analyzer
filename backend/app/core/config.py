@@ -20,6 +20,7 @@ class Settings(BaseSettings):
 
     def get_database_url(self) -> str:
         url = self.DATABASE_URL or self.MONGO_URI or "postgresql://localhost:5432/docmind_db"
+        url = url.strip('"\'')
         if url.startswith("postgresql://"):
             url = url.replace("postgresql://", "postgresql+asyncpg://", 1)
         return url
