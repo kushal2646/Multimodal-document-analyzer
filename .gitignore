@@ -1,0 +1,33 @@
+# Node.js dependencies
+node_modules/
+dist/
+.env
+.env.local
+.env.development
+.env.production
+
+# Python virtual environment & cache
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.installed.cfg
+
+# App databases and local uploads
+*.db
+*.sqlite3
+backend/uploads/*
+backend/vectors/*
+!backend/uploads/.gitkeep
+!backend/vectors/.gitkeep
+
+# Operating System & IDEs
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+*.swp

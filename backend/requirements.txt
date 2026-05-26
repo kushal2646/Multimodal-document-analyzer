@@ -1,0 +1,24 @@
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+sqlalchemy
+asyncpg
+greenlet
+pyjwt
+passlib[bcrypt]
+python-multipart
+python-magic-bin; sys_platform == 'win32'
+python-magic; sys_platform != 'win32'
+pytesseract
+opencv-python-headless
+numpy
+pillow
+pypdf
+pdf2image
+python-docx
+sentence-transformers
+faiss-cpu
+requests
+groq
+python-dotenv
